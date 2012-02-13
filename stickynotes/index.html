@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html>
+
+    <head>
+    
+        <meta charset="utf-8">
+        <title>StickyNotes - 50apps challenge</title>
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="glyphicons.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.1/underscore-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.0/backbone-min.js"></script>
+      
+    </head>
+    
+    <body>
+   
+        
+        <header id="header">
+            <span class="headicon glyphicons page"></span>StickyNotes
+        </header>
+        
+        <aside id="sidebar">
+            <a href="#/add-note/">
+                <span class="icon glyphicons add"></span>Add a sticky
+            </a>
+        </aside>
+        
+        <section id="canvas">
+            
+        </section>
+
+        <footer id="footer">
+            StickyNotes App - 50apps Challenge / by Seiryuu
+        </footer>        
+        
+        <div id="overlay"></div>
+        
+        <div id="modal">
+        
+            <h3></h3><button data-action="close" class="close"><span class="icon glyphicons cancel"></span></button>
+            
+            <ul>
+                <li><label for="note-title">Note title</label><input type="text" id="note-title" /></li>
+                <li><label for="note-content">Note content</label><textarea id="note-content"></textarea></li>
+                 <li>
+                    <label for="note-swatch">Note color swatch</label>
+                    <select id="note-swatch">
+                        <option>green</option>
+                        <option>blue</option>
+                        <option>yellow</option>
+                        <option>orange</option>
+                        <option>red</option>
+                    </select>   
+                 </li>
+            </ul>
+            
+            <button data-action="store" class="store"><span class="icon glyphicons circleok"></span>Save note</button>
+        
+        </div>
+        
+        
+        <script src="app.js"></script>
+        
+    </body>
+
+</html>

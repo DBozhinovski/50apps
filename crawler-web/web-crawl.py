@@ -10,7 +10,7 @@ passed = []
 
 @route("/")
 def index():
-    return static_file("form.html", root="");
+    return static_file("form.html", root="")
     
 @route('/crawl.html', method="POST")
 def crawl():
